@@ -1,0 +1,58 @@
+body{
+   
+    background-image: url('nikebg.png');
+    background-repeat: cover;
+    color:white;
+    border-color: white;
+    border-radius: 7px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    width:300px;
+    
+}
+.page{
+    text-align: center; 
+    border: 1px solid #ccc; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px; 
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.div{
+    margin-bottom: 15px;
+}
+.signupbutton{
+    
+    font-weight: 300px;
+    padding: 10px 20px; background-color: #007BFF; 
+    color: black; 
+    border-color: white;
+    background-color: white;
+    border-radius: 4px; 
+    cursor: pointer;
+    width:100px;
+    text-align: center;
+
+    
+}
+.textinput{
+  padding: 8px; 
+  width: 100%
+}
+.emailinput{
+    padding: 8px; 
+    width: 100%
+}
+.password{
+    padding: 8px; 
+    width: 100%;
+}

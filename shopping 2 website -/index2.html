@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN NOW!!!</title>
+    <link rel="stylesheet" href="loginstyle.css">
+</head>
+<body class="loginpage">
+    <div class="page">
+        <h1 style="margin-bottom: 20px;">Login</h1>
+        <form  method="post" id="loginForm" action="login.php">
+            <div style="margin-bottom: 15px;">
+                <label class=emaillabel for="name">Name:</label><br>
+                <input class="emailinput" type="text" id="name" name="name" >
+            </div>
+            <div style="margin-bottom: 15px;">
+                <label class=emaillabel for="email">Email:</label><br>
+                <input class="emailinput" type="email" id="email" name="email" >
+            </div>
+            <div style="margin-bottom: 15px;">
+                <label for="password">Password:</label><br>
+                <input class="password" type="password" id="password" name="password" >
+            </div>
+            <a href="index4.html" target="_blank"><button class=logbutton type="submit" >Login</button></a>
+        </form>
+        
+    </div>
+</body>
+<script>
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from reloading the page
+            
+            // Get the input values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            // Save the data to localStorage
+            localStorage.setItem('name', name);
+            localStorage.setItem('email', email);
+            localStorage.setItem('password', password);
+
+            // Redirect to the profile page
+            window.location.href = 'index4.html';
+        });
+</script>
+
+</html>
